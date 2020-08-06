@@ -1,0 +1,58 @@
+1. Introducción
+2. Antecedentes y justificación
+3. El problema
+    3.1. Situación problemática
+    3.2. Formulación del problema
+4. Objetivos
+    4.1. Objetivo general
+    4.2. Objetivos específicos
+5. Metodología
+    (PUDS)
+    5.1. Captura de requisitos
+        5.1.1 Actores y casos de Uso
+            5.1.1.1. Actores
+            5.1.1.2. Casos de uso
+            5.1.1.3. Tabla de actores y casos de uso
+        5.1.2. Priorizar casos de uso
+        5.1.3. Detallar casos de uso
+        5.1.4. Prototipar interfaces de usuario
+        5.1.5. Modelo de casos de uso
+    5.2. Análisis
+        5.2.1. Análisis de la arquitectura
+            5.2.1.1. Identificar los paquetes
+            5.2.1.2. Relacionar paquetes y casos de uso
+            5.2.1.3. Vista de casos de uso
+        5.2.2. Analisis de casos de uso
+        5.2.3. Análisis de clases
+        5.2.4. Análisis de paquetes
+    5.3. Diseño
+        5.3.1. Diseño de la arquitectura
+            5.3.1.1. Diseño físico de la arquitectura
+            5.3.1.2. Diseño lógico de la arquitectura
+        5.3.2. Diseño de datos
+            5.3.2.1. Diseño Lógico de datos
+                5.3.2.1.1. Diagrama de clases
+                5.3.2.1.2. Mapeo
+                5.3.2.1.3. Normalización
+            5.3.2.2. Diseño físico de datos
+                5.3.2.2.1. Tabla de volumen
+                5.3.2.2.2. Script
+                5.3.2.2.3. Diagrama relacional
+                5.3.2.2.4. Consultas
+                5.3.2.2.5. Procedimientos almacenados
+                5.3.2.2.6. Disparadores
+    5.4. Implementación
+        5.4.1. Plataforma de desarrollo de software
+            5.4.1.1. Lenguaje de programación
+            5.4.1.2. Base de Datos
+            5.4.1.3. Sistema operativo
+            5.4.1.4. Otros
+        5.4.2. Implementación de la arquitectura del sistema
+        5.4.3. Implementación de la arquitectura de subsistemas
+6. Marco teórico
+7. Desarrollo
+8. Resultados
+9. Conclusiones
+10. Recomendaciones
+11. Bibliografía citada
+12. Anexos

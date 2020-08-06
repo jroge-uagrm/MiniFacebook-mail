@@ -1,0 +1,420 @@
+<p>No ingresar caracteres especiales, la letra Ñ (ñ), ni caracteres con tíldes.</p>
+<p>El formato para fechas es AAAA-MM-DD, por ejemplo 1998-03-14.</p>
+<p>El sexo es el caracter 'F' para femenino y 'M' para masculino.</p>
+<p>Solo se aceptan numeros de celular de 8 digitos.</p>
+<p>Solo se aceptan contraseñas con 4 a 10 caracteres numericos o alfabeticos.</p>
+<table>
+    <thead>
+        <tr>
+            <th scope="col" style="text-align: center;">
+                Caso de uso
+            </th>
+            <th scope="col">
+                Comando:Parametros
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="item-stock">
+                <strong>
+                    CU1 Gestionar perfil
+                </strong>
+            </td>
+            <td class="item-stock"></td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Registrar
+            </td>
+            <td class="item-stock">
+                REGUSER:correo:contra:nombres:apellidos:celular:fecha_nac:sexo
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                REGUSER:user@grupo8sa.tech:12345:Juan:Perez:77007700:1990-10-10:M
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                Mostrar
+            </td>
+            <td class="item-stock">
+                GETUSER:correo:contra
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                GETUSER:user@grupo8sa.tech:12345
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Modificar
+            </td>
+            <td class="item-stock">
+                MODUSER:id:contra:nombres:apellidos:celular:correo
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                MODUSER:10:12345:Juancito:Perez Mamani:69090645:juanperez@grupo8sa.tech
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Eliminar
+            </td>
+            <td class="item-stock">
+                DELUSER:id:contra
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                DELUSER:7:12345
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="item-stock">
+                Cambiar password
+            </td>
+            <td class="item-stock">
+                MODPASS:id:antigua_pass:nueva_pass
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                MODPASS:10:12345:admin123
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                <strong>
+                    CU2 Gestionar contactos
+                </strong>
+            </td>
+            <td class="item-stock"></td>
+            <td class="item-stock"></td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Listar solicitudes recibidas
+            </td>
+            <td class="item-stock">
+                LISTSOL:id:contra
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                LISTSOL:15:12345
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Registrar (Aceptar Solicitud Amistad)
+            </td>
+            <td class="item-stock">
+                REGCONT:id:contra:idAmigo
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                REGCONT:15:12345:10
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Listar (amigos)
+            </td>
+            <td class="item-stock">
+                LISTCONT:id:contra
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                LISTCONT:15:12345
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Eliminar (Amigo)
+            </td>
+            <td class="item-stock">
+                DELCONT:id:contra:idAmigo
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                DELCONT:15:12345:10
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                <strong>
+                    CU3 Buscar Amigo
+                </strong>
+            </td>
+            <td class="item-stock"></td>
+            <td class="item-stock"></td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Buscar
+            </td>
+            <td class="item-stock">
+                FINDUSER:coincidencias (nombres, apellidos, celular o correo)
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                FINDUSER:Cadima<br>
+				FINDUSER:71604249<br>
+				FINDUSER:user@grupo8sa.tech
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                Ver perfil de amigo
+            </td>
+            <td class="item-stock">
+                VERPERFIL:idAmigo
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                VERPERFIL:15
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                <strong>
+                    CU4 Buscar mensaje
+                </strong>
+            </td>
+            <td class="item-stock"></td>
+            <td class="item-stock"></td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Buscar
+            </td>
+            <td class="item-stock">
+                FINDMSJ:id:contra:idReceptor:datos  (Contenido del mensaje)
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                FINDMSJ:15:12345:17:Hola
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                <strong>
+                    CU5 Enviar solicitud de amistad
+                </strong>
+            </td>
+            <td class="item-stock"></td>
+            <td class="item-stock"></td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Enviar solicitud
+            </td>
+            <td class="item-stock">
+                SENDSOL:id:contra:idAmigo
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                SENDSOL:15:12345:25
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Listar solicitudes enviadas
+            </td>
+            <td class="item-stock">
+                SENTSOL:id:contra
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                SENTSOL:15:12345
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Cancelar solicitud
+            </td>
+            <td class="item-stock">
+                CANCSOL:id:contra:idAmigo
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                CANCSOL:15:12345:25
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                <strong>
+                    CU6 Gestionar mensajes
+                </strong>
+            </td>
+            <td class="item-stock"></td>
+            <td class="item-stock"></td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Registrar (Enviar mensaje)
+            </td>
+            <td class="item-stock">
+                SENDMSJ:id:contra:idReceptor:mensaje
+            </td>
+        </tr>
+        <tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                SENDMSJ:15:12345:17:Hola estimado amigo
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                Listar mensajes
+            </td>
+            <td class="item-stock">
+                LISTMSJ:id:contra:idReceptor
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                LISTMSJ:15:12345:17
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Modificar
+            </td>
+            <td class="item-stock">
+                MODMSJ:id:contra:idMensaje:mensaje_modificado
+            </td>
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                MODMSJ:15:12345:30:Hola
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Eliminar
+            </td>
+            <td class="item-stock">
+                DELMSJ:id:contra:idMensaje
+        </tr>
+		<tr>
+            <td class="item-stock">
+                
+            </td>
+            <td class="item-stock">
+                DELMSJ:15:12345:Hola
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="item-stock">
+                <strong>
+                    CU7 Generar reportes
+                </strong>
+            </td>
+            <td class="item-stock"></td>
+            <td class="item-stock"></td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Listar reporte
+            </td>
+            <td class="item-stock">
+                LISTREPORT
+            </td>
+            <td class="item-stock">
+
+            </td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                <strong>
+                    CU8 Ver estadisticas
+                </strong>
+            </td>
+            <td class="item-stock"></td>
+            <td class="item-stock"></td>
+        </tr>
+        <tr>
+            <td class="item-stock">
+                Listar estadisticas
+            </td>
+            <td class="item-stock">
+                LISTSTATS
+            </td>
+            <td class="item-stock">
+
+            </td>
+        </tr>
+    </tbody>
+</table>
